@@ -1,9 +1,14 @@
 name: run task.py
 
+#on:
+#  push:
+#    branches:
+#      - main  # Change this to your default branch if it's not 'main'
+
 on:
-  push:
-    branches:
-      - main  # Change this to your default branch if it's not 'main'
+  schedule:
+    - cron: '0 7 * * *' # At 00:00 on Monday
+
 
 jobs:
   build:
