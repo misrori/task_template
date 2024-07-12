@@ -26,7 +26,7 @@ def append_to_top_of_log(log_file_path, message):
     with open(log_file_path, 'w') as log_file:
         log_file.write(message + old_content)
 
-# Get the current working directory
+# Get the current working directory to variable
 cwd = os.getcwd()
 
 # Define the new folder name
